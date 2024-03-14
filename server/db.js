@@ -12,12 +12,12 @@ async function createTables()  {
     DROP TABLE IF EXISTS products;
     CREATE TABLE users(
       id UUID PRIMARY KEY,
-      username VARCHAR(20) NOT NULL UNIQUE,
-      password VARCHAR(255) NOT NULL
+      username VARCHAR(55) NOT NULL UNIQUE,
+      password VARCHAR(100) NOT NULL
     );
     CREATE TABLE products(
       id UUID PRIMARY KEY,
-      name VARCHAR(100) NOT NULL UNIQUE
+      name VARCHAR(255) NOT NULL UNIQUE
     );
     CREATE TABLE user_favorites(
       id UUID PRIMARY KEY,
